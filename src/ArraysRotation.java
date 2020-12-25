@@ -17,15 +17,15 @@ public class ArraysRotation {
 			d = d - a.length;
 		}
 
-		int[] temp1 = Arrays.copyOfRange(a, 0, d);
-		int[] temp = Arrays.copyOfRange(a, d, a.length);
+		int[] end = Arrays.copyOfRange(a, 0, d);
+		int[] start = Arrays.copyOfRange(a, d, a.length);
 		
 		int i = 0;
-		for (; i < temp.length; i++) {
-			result[i] = temp[i];
+		for (; i < start.length; i++) {
+			result[i] = start[i];
 		}
-		for (int j = 0; j < temp1.length; i++, j++) {
-			result[i] = temp1[j];
+		for (int j = 0; j < end.length; i++, j++) {
+			result[i] = end[j];
 		}
 		
 		return result;
