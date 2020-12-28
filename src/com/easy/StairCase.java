@@ -1,3 +1,4 @@
+package com.easy;
 import java.util.Scanner;
 
 public class StairCase {
